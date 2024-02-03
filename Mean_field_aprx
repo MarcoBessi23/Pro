@@ -44,7 +44,7 @@ def information_graphs(PG, VG, q=0.5):
     VG = nx.adjacency_matrix(VG)
     AI = np.matrix()
     for x, y in AP:
-        r = random() # BINOMIAL
+        r = ranodom() # BINOMIAL
         if r > q:
             AI[x, y] = AP[x, y]
         else:
